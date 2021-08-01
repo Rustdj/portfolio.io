@@ -1,0 +1,56 @@
+.ability {
+    background-color: rgb(204, 200, 200);
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+    }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding: 60px 10px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        column-gap: 13px;
+        row-gap: 13px;
+    }
+    &__column {
+        position: relative;
+        row-gap: 13px;
+        border: 1px solid;
+        &-img {
+            padding: 30px 30px 20px;
+            &_active {
+                padding: 50px 30px 20px;
+            }
+        }
+    }
+    &__text {
+        margin: 0 30px;
+    }
+    &__descr {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+        padding: 15px 29px 25px 30px;
+    }
+    &__descr-active {
+        padding: 9px 29px 15px 30px;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 500;
+    }
+    &__text-active {
+        margin-top: 8px;
+        margin-left: 29px;
+    }
+}
+
